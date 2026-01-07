@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Card from './Card';
+import BgChanger from './projects/BgChanger/BgChanger';
 
 const App = () => {
   let myObj = {
@@ -12,8 +13,10 @@ const App = () => {
     <>
     
     {/*  sending values from one componant to another */}
-    <Card username="littalk" btnText="click here" />
-    <Card username="DreamSpire"  />
+    {/* <Card username="littalk" btnText="click here" />
+    <Card username="DreamSpire"  /> */}
+    <BgChanger/>
+
     </>
     
     
