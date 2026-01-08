@@ -3,7 +3,10 @@ import Card from './Card';
 import BgChanger from './projects/BgChanger/BgChanger';
 import PassGenerator from './projects/PasswordGenerator/PassGenerator';
 import InputPage from './projects/CurrencyConverter/InputPage';
-
+import Navbar from './projects/RouteWebsite/conponents/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Footer from './projects/RouteWebsite/conponents/Footer';
+import Home from './projects/RouteWebsite/pages/Home';
 const App = () => {
   let myObj = {
     name: "Rayhan",
@@ -22,8 +25,15 @@ const App = () => {
 
     {/* Project : 2 */}
     {/* <PassGenerator/> */}
+      {/* Project: 3  */}
+    {/* <InputPage/> */}
 
-    <InputPage/>
+    {/* <Router>
+      <Navbar /> */}
+      {/* baki components */}
+      {/* <Home/>
+      <Footer/>
+    </Router> */}
 
     </>
     
