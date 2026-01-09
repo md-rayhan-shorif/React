@@ -32,28 +32,28 @@ import Github, { githubInfoLoader } from './projects/RouteWebsite/pages/Github.j
 //     }
 // ])
 
-// const router = createBrowserRouter(
-//     createRoutesFromElements(
-//         <Route path='/' element={<Layout/>} >
-//             <Route path='' element={<Home/>} />
-//             <Route path='about' element={<About/>} />
-//             <Route path='contact' element={<Contact/>} />
-//             <Route path='user/:userId' element={<User/>} />
-//             <Route
-//                 loader={githubInfoLoader}
-//              path='github'
-//               element={<Github/>}
-//                />
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <Route path='/' element={<Layout/>} >
+            <Route path='' element={<Home/>} />
+            <Route path='about' element={<About/>} />
+            <Route path='contact' element={<Contact/>} />
+            <Route path='user/:userId' element={<User/>} />
+            <Route
+                loader={githubInfoLoader}
+             path='github'
+              element={<Github/>}
+               />
 
-//         </Route>
-//     )
-// )
+        </Route>
+    )
+)
 
 
 createRoot(document.getElementById('root')).render(
   
-    <App />
+    // <App />
 
-    // <RouterProvider router={router} />
+    <RouterProvider router={router} />
   
 )

@@ -15,11 +15,7 @@ import ThemeBtn from './projects/MiniContextProject/Components/ThemeBtn';
 import Cards from './projects/MiniContextProject/Components/Card';
 import ThemeProject from './projects/MiniContextProject/Pages/ThemeProject';
 const App = () => {
-  // let myObj = {
-  //   name: "Rayhan",
-  //   age: 23
-  // }
-  // let newArr = [ 1,2,3,4]
+ 
 
   /* 
   
