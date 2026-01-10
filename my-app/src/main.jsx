@@ -9,6 +9,10 @@ import About from './projects/RouteWebsite/pages/About.jsx'
 import Contact from './projects/RouteWebsite/pages/Contact.jsx'
 import User from './projects/RouteWebsite/pages/User.jsx'
 import Github, { githubInfoLoader } from './projects/RouteWebsite/pages/Github.jsx'
+import BgChanger from './projects/BgChanger/BgChanger.jsx'
+import PassGenerator from './projects/PasswordGenerator/PassGenerator.jsx'
+import ThemeProject from './projects/MiniContextProject/Pages/ThemeProject.jsx'
+import InputPage from './projects/CurrencyConverter/InputPage.jsx'
 
 // const router = createBrowserRouter([
 //     {
@@ -39,6 +43,11 @@ const router = createBrowserRouter(
             <Route path='about' element={<About/>} />
             <Route path='contact' element={<Contact/>} />
             <Route path='user/:userId' element={<User/>} />
+            <Route path='/project1' element={<BgChanger/>} />
+            <Route path='/project2' element={<PassGenerator/>} />
+            <Route path='/project3' element={<ThemeProject/>} />
+            <Route path='/project4' element={<InputPage/>} />
+            
             <Route
                 loader={githubInfoLoader}
              path='github'

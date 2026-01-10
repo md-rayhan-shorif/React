@@ -2,7 +2,7 @@ import React from 'react'
 import myPhoto from '../../../assets/myPhoto.jpeg'
 const AboutMe = () => {
   return (
-    <div>
+    <div className=' bg-white rounded-xl ' >
         <h1 className=' text-3xl p-4 font-semibold'>About Me</h1>
         <div className=' flex justify-between  '> 
             <img src={myPhoto} alt="Md. Rayhan Shorif" 
