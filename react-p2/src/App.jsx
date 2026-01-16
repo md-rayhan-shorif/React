@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import ToDoList from './Projects/ToDoList/Pages/ToDoList'
 
 
 function App() {
@@ -8,11 +9,9 @@ function App() {
 
   return (
     <>
-      <div className=' text-5xl font-bold text-white text-center  bg-black h-screen'>
-        Hi , I am good
-      </div>
+      <ToDoList/>
     </>
   )
 }
 
-export default App
+export default App 
