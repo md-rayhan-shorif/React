@@ -18,6 +18,7 @@ const AddTodo = () => {
 
 
   return (
+    
      <form onSubmit={addTodoHandler} className="space-x-3 pt-12 max-w-2xl flex">
       <input
         type="text"
