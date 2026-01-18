@@ -1,5 +1,4 @@
-import React from 'react'
-import AddTodo from './AddTodo'
+
 import {useSelector , useDispatch} from 'react-redux'
 import { removeTodo} from '../features/Todo/TodoSlice'
 const Todos = () => {
