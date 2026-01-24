@@ -6,7 +6,6 @@ const TodoItems = ({ todo }) => {
     const dispatch = useDispatch()
     const [todoMsg, setTodoMsg] = useState(todo.text)
     const [isTodoEditable, setIsTodoEditable] = useState(false);
-    const check = false; // তোমার কোড অনুযায়ী কনস্ট্যান্ট রাখা হলো
 
     const editHandler = () => {
         dispatch(editTask({ id: todo.id, text: todoMsg }))
