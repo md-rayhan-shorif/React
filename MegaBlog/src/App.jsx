@@ -3,6 +3,9 @@ import {useDispatch} from 'react-redux'
 import './App.css'
 import authService from './appwrite/auth'
 import {login, logout} from './store/authSlice'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import {Outlet} from 'react-router-dom'
 
 function App() {
    const [loading, setLoading] = useState(true);
@@ -19,10 +22,21 @@ function App() {
     })
     .finally(()=> setLoading(false))
    },[])
-  return (
+   
+  return !loading ? (
     <>
-      <h1 className=' text-4xl text-center'>This is my Mega Project</h1>
+      <div className=' min-h-screen flex flex-wrap content-between bg-gray-900 '> 
+        <div className=' w-full block'> 
+            <Header/>
+            <main>
+              <Outlet/>
+            </main>
+            <Footer/>
+        </div>
+      </div>
     </>
+  ) : (
+    <h1> Loading... </h1>
   )
 }
 

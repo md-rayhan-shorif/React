@@ -102,6 +102,7 @@ export class Service{
                 conf.appwriteBucketId,
                 ID.unique(),
                 file
+                
             )
         } catch (error) {
             console.log("Appwrite service :: uploadFile :: error" , error)
