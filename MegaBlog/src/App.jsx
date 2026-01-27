@@ -8,6 +8,9 @@ import Footer from './components/Footer/Footer'
 import {Outlet} from 'react-router-dom'
 import Login from './components/Login'
 import Signup from './components/Signup'
+import RTE from './components/others/RTE'
+import AllPost from './pages/AllPost'
+import AddPost from './pages/AddPost'
 
 function App() {
    const [loading, setLoading] = useState(true);
@@ -33,8 +36,6 @@ function App() {
             <main>
               <Outlet/>
             </main>
-            <Signup/>
-            <Login/>
             <Footer/>
         </div>
       </div>
